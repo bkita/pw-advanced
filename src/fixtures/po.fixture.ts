@@ -1,6 +1,6 @@
 import { test as base } from '@playwright/test';
 import { ILogObj, Logger } from 'tslog';
-import { HomePage } from '../pages/HomePage';
+import { HomePage } from '../ui/pages/HomePage';
 
 interface Pages {
   homePage: HomePage;

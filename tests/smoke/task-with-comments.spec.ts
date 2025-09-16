@@ -1,5 +1,5 @@
 import { expect, test } from '../../src/fixtures/po.fixture';
-import { CreateProjectModel } from '../../src/models/create-project.model';
+import { CreateProjectModel } from '../../src/ui/models/create-project.model';
 
 test.describe('Add task with comments', () => {
   test('task with comments - image and voice', { tag: ['@smoke', '@smoke004'] }, async ({ homePage }) => {

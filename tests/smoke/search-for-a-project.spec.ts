@@ -1,5 +1,5 @@
 import { expect, test } from '../../src/fixtures/po.fixture';
-import { CreateProjectModel } from '../../src/models/create-project.model';
+import { CreateProjectModel } from '../../src/ui/models/create-project.model';
 
 test.describe('Search', () => {
   test('find and existing project', { tag: ['@smoke', '@smoke003'] }, async ({ homePage }) => {

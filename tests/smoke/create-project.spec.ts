@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
 import { expect, test } from '../../src/fixtures/po.fixture';
-import { CreateProjectModel } from '../../src/models/create-project.model';
+import { CreateProjectModel } from '../../src/ui/models/create-project.model';
 
 test('should create a new project', { tag: ['@smoke', '@smoke001'] }, async ({ homePage }) => {
   // Arrange

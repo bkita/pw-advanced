@@ -1,5 +1,5 @@
 import { expect, test } from '../../src/fixtures/po.fixture';
-import { CreateProjectModel } from '../../src/models/create-project.model';
+import { CreateProjectModel } from '../../src/ui/models/create-project.model';
 
 test.describe('Max number of projects on free plan', () => {
   test('create project over limit', { tag: ['@smoke', '@smoke002'] }, async ({ homePage }) => {
