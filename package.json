@@ -9,7 +9,8 @@
     "test:debug": "npx playwright test --debug",
     "test:ui": "npx playwright test --ui",
     "test:nolint": "npx playwright test",
-    "show-report": "npx playwright show-report"
+    "show-report": "npx playwright show-report",
+    "prepare": "husky"
   },
   "keywords": [
     "playwright",
@@ -30,6 +31,8 @@
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-playwright": "^2.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.0"
@@ -40,6 +43,12 @@
     "singleQuote": true,
     "endOfLine": "auto",
     "printWidth": 120
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint",
+      "tsc --noEmit --skipLibCheck"
+    ]
   },
   "dependencies": {
     "chalk": "^5.6.2",
