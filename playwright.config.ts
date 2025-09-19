@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv';
-import path from 'path';
+import * as dotenv from 'dotenv';
+import * as path from 'path';
 
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
@@ -14,7 +14,13 @@ export default defineConfig({
   workers: 1,
   reporter: 'html',
   use: {
+    timezoneId: 'Europe/Warsaw',
     baseURL: 'https://app.todoist.com',
+    // extraHTTPHeaders: process.env.API_TOKEN
+    //   ? {
+    //       Authorization: `Bearer ${process.env.API_TOKEN}`,
+    //     }
+    //   : undefined,
     trace: 'on',
     contextOptions: {
       permissions: ['microphone'],
