@@ -5,13 +5,14 @@ import { expect, test } from '../../src/fixtures/po.fixture';
 
 test.describe('Max number of projects on free plan', () => {
   test('create project over limit', { tag: ['@smoke', '@smoke002'] }, async ({ homePage }) => {
-    // Arrange
+    // // Arrange
+    // const PROJECT_COLOR = 'Łosoś';
     // const projects: CreateProjectModel[] = [
-    //   { name: 'Project One', color: 'Łosoś' },
-    //   { name: 'Project Two', color: 'Łosoś' },
-    //   { name: 'Project Three', color: 'Łosoś' },
-    //   { name: 'Project Four', color: 'Łosoś' },
-    //   { name: 'Project Five', color: 'Łosoś' },
+    //   { name: 'Project One', color: PROJECT_COLOR },
+    //   { name: 'Project Two', color: PROJECT_COLOR },
+    //   { name: 'Project Three', color: PROJECT_COLOR },
+    //   { name: 'Project Four', color: PROJECT_COLOR },
+    //   { name: 'Project Five', color: PROJECT_COLOR },
     // ];
 
     // // Act
